@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Tiky Checklist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #007AFF;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+        p {
+            margin-bottom: 16px;
+            color: #666;
+        }
+        .subtitle {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        .feature strong {
+            color: #333;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .contact {
+            background: #e8f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 32px;
+        }
+        .contact a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        .footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+        }
+        .footer a {
+            color: #007AFF;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tiky Checklist</h1>
+    <p class="subtitle">Simple, Beautiful, Organized</p>
+
+    <h2>Our Philosophy</h2>
+    <p>Tiky is designed with one goal: help you stay organized without the complexity. We believe productivity tools should be intuitive, beautiful, and stay out of your way. Whether you're planning a trip, managing daily tasks, or organizing a project, Tiky makes it effortless.</p>
+
+    <h2>Getting Started</h2>
+    
+    <div class="feature">
+        <strong>Create Templates</strong>
+        <p>Start by creating templates for your recurring tasks. Go to the Templates page, tap +, and add your tasks. Templates are reusable blueprints for your checklists.</p>
+    </div>
+
+    <div class="feature">
+        <strong>Create Checklists from Templates</strong>
+        <p>When you're ready to work, create a checklist from any template. Each checklist is an instance you can check off and complete independently.</p>
+    </div>
+
+    <div class="feature">
+        <strong>Track Progress</strong>
+        <p>Visual progress indicators show you how much you've completed at a glance. Check off tasks and watch your progress grow.</p>
+    </div>
+
+    <div class="feature">
+        <strong>Focus Mode</strong>
+        <p>Need to concentrate? Focus Mode lets you tackle one task at a time without distractions.</p>
+    </div>
+
+    <h2>Premium Features</h2>
+    <p>Upgrade to Premium to unlock additional features and enhance your productivity experience.</p>
+
+    <div class="contact">
+        <h2 style="margin-top: 0;">Need Help?</h2>
+        <p>We're here to help! For questions or support, reach out to us:</p>
+        <p><strong>Email:</strong> <a href="mailto:yinxingdyx@163.com">yinxingdyx@163.com</a></p>
+        <p style="margin-bottom: 0;">We typically respond within 24-48 hours.</p>
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="https://strangetown.github.io/product-pages/tiky/privacy-policy.html">Privacy Policy</a> • 
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+        </p>
+        <p>© <span id="year"></span> Tiky Checklist</p>
+    </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
