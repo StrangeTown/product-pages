@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>技术支持 / Support - TempoWalk</title>
+  <title>Support - TempoWalk</title>
   <style>
     :root {
       color-scheme: light;
@@ -75,8 +75,10 @@
 <body>
   <main class="container">
     <h1 data-lang="zh" hidden>技术支持</h1>
+    <h1 data-lang="ja" hidden>サポート</h1>
     <h1 data-lang="en">Support</h1>
     <p class="subtitle" data-lang="zh" hidden>TempoWalk（间歇走）支持中心</p>
+    <p class="subtitle" data-lang="ja" hidden>TempoWalk サポートセンター</p>
     <p class="subtitle" data-lang="en">TempoWalk support center</p>
 
     <section class="lang" data-lang="zh" aria-label="中文支持页" hidden>
@@ -122,6 +124,28 @@
 
       <p class="meta">Last updated: 2026-03-01</p>
     </section>
+
+    <section class="lang" data-lang="ja" aria-label="日本語サポートページ" hidden>
+      <p>TempoWalk をご利用いただきありがとうございます。問題が発生した場合は、まず以下の FAQ をご確認ください。解決しない場合はメールでご連絡ください。</p>
+
+      <h3>お問い合わせ</h3>
+      <ul>
+        <li>サポートメール：<a href="mailto:yinxingdyx@163.com">yinxingdyx@163.com</a></li>
+        <li>ご連絡時に、端末名・iOS/watchOS バージョン・アプリバージョン・スクリーンショットを添えてください</li>
+      </ul>
+
+      <h3>よくある質問</h3>
+      <div class="card">
+        <p><strong>Q: ルートマップが表示されません。</strong></p>
+        <p>A: iOS 設定で TempoWalk の位置情報許可を有効にしてください（推奨：「App の使用中のみ許可」）。</p>
+      </div>
+      <div class="card">
+        <p><strong>Q: Apple Health にデータが同期されません。</strong></p>
+        <p>A: アプリ内で HealthKit 同期を有効にし、ヘルスケア設定で Workout / Distance / Route の書き込み許可をオンにしてください。</p>
+      </div>
+
+      <p class="meta">最終更新日：2026-03-01</p>
+    </section>
   </main>
 
   <script>
@@ -154,9 +178,20 @@
       }
 
       var rawLang = (getQueryParam('lang') || '').toLowerCase();
-      var lang = rawLang.indexOf('zh') === 0 ? 'zh' : 'en';
+      var lang = 'en';
+      if (rawLang.indexOf('zh') === 0) {
+        lang = 'zh';
+      } else if (rawLang.indexOf('ja') === 0) {
+        lang = 'ja';
+      }
 
-      document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+      if (lang === 'zh') {
+        document.documentElement.lang = 'zh-CN';
+      } else if (lang === 'ja') {
+        document.documentElement.lang = 'ja';
+      } else {
+        document.documentElement.lang = 'en';
+      }
 
       var nodes = document.querySelectorAll('[data-lang]');
       for (var i = 0; i < nodes.length; i++) {
