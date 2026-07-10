@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Looping</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #2bb0c4 0%, #0d5b6a 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 { font-size: 32px; margin-bottom: 10px; color: #0e7c8b; text-align: center; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 40px; font-size: 16px; }
+
+        .section { margin-bottom: 30px; }
+        .section h2 {
+            font-size: 20px; color: #333; margin-bottom: 15px;
+            padding-bottom: 10px; border-bottom: 2px solid #0e7c8b;
+        }
+        .section p { margin-bottom: 15px; color: #555; line-height: 1.8; }
+
+        .faq { list-style: none; padding: 0; }
+        .faq li {
+            padding: 16px 0; border-bottom: 1px solid #eee;
+        }
+        .faq li:last-child { border-bottom: none; }
+        .faq .q { font-weight: 600; color: #0e7c8b; margin-bottom: 6px; }
+        .faq .a { color: #555; }
+
+        .info-list { list-style: none; padding: 0; }
+        .info-list li {
+            padding: 12px 0; border-bottom: 1px solid #eee; display: flex; align-items: flex-start;
+        }
+        .info-list li:last-child { border-bottom: none; }
+        .info-list li::before {
+            content: "✓"; color: #0e7c8b; font-weight: bold; margin-right: 10px; font-size: 18px; line-height: 1.6;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #2bb0c4 0%, #0d5b6a 100%);
+            color: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 30px;
+        }
+        .contact-box h3 { font-size: 22px; margin-bottom: 15px; }
+        .email {
+            font-size: 18px; font-weight: bold; margin: 20px 0; padding: 15px;
+            background: rgba(255, 255, 255, 0.2); border-radius: 10px; word-break: break-all;
+        }
+        .email a { color: white; text-decoration: none; transition: opacity 0.3s; }
+        .email a:hover { opacity: 0.8; }
+
+        .footer {
+            text-align: center; margin-top: 40px; padding-top: 20px;
+            border-top: 1px solid #eee; color: #999; font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; margin: 20px auto; }
+            h1 { font-size: 24px; }
+            .email { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌊 Looping Support</h1>
+        <p class="subtitle">Help &amp; FAQ · 听力池</p>
+
+        <div class="section">
+            <h2>About Looping</h2>
+            <p>
+                Looping (听力池) helps you truly master English listening. Import any audio, get sentence-by-sentence
+                subtitles generated right on your device, listen to each sentence on repeat until it clicks (Focus),
+                then drop the clips you've mastered into your Listening Pool to soak them in over time.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>How It Works</h2>
+            <ul class="info-list">
+                <li><strong>Import:</strong> On the Library tab, tap the + to import an mp3 / m4a from your phone.</li>
+                <li><strong>Subtitles:</strong> After import, sentence subtitles (with translations) are generated on your device — no internet upload.</li>
+                <li><strong>Focus (精听):</strong> Play a clip and loop it sentence by sentence until you can hear every word.</li>
+                <li><strong>Listening Pool (听力池):</strong> Graduate mastered clips into the Pool, then Soak (shuffle) to review them.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+            <ul class="faq">
+                <li>
+                    <div class="q">Is Looping free?</div>
+                    <div class="a">Yes — completely free, with no ads, no subscriptions, and no in-app purchases.</div>
+                </li>
+                <li>
+                    <div class="q">How are subtitles created?</div>
+                    <div class="a">After you import audio, the app transcribes it and adds translations entirely on your device. The audio never leaves your phone.</div>
+                </li>
+                <li>
+                    <div class="q">The subtitles aren't accurate — can I fix them?</div>
+                    <div class="a">Yes. In the player, long-press a sentence and choose "Edit text" to correct the original or the translation.</div>
+                </li>
+                <li>
+                    <div class="q">Does it work offline?</div>
+                    <div class="a">Yes. Everything runs on-device. The only time an internet connection helps is the first time a translation language pack is downloaded from Apple.</div>
+                </li>
+                <li>
+                    <div class="q">How do I change playback speed or looping?</div>
+                    <div class="a">Open the player and use the controls there to adjust speed, loop mode, and the practice range.</div>
+                </li>
+                <li>
+                    <div class="q">Where is my data stored?</div>
+                    <div class="a">Only on your device. Looping has no account and no server. See our Privacy Policy for details.</div>
+                </li>
+                <li>
+                    <div class="q">I imported a clip but don't see it in the Pool.</div>
+                    <div class="a">Imported clips live in the Library. To add one to the Pool, open it, practice in Focus, then graduate it into the Pool.</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact-box">
+            <h3>Need Help?</h3>
+            <p>If you run into any issue or have a suggestion, email us anytime. We typically reply within 24 hours.</p>
+            <div class="email">
+                <a href="mailto:yinxingdyx@163.com">📧 yinxingdyx@163.com</a>
+            </div>
+            <p style="font-size: 14px; opacity: 0.9;">
+                Please include "[Looping Feedback]" in your email subject
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Looping · 听力池. All rights reserved.</p>
+            <p style="margin-top: 5px;">Thanks for using Looping!</p>
+        </div>
+    </div>
+</body>
+</html>
